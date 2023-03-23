@@ -1,0 +1,35 @@
+import tkinter
+from tkinter import ttk
+
+ventana = tkinter.Tk()
+ventana.geometry("500x500")
+ventana.title("Mi primera interfaz con TKinter")
+
+#etiquetas y barra input nombre
+etiNombre = tkinter.Label(ventana, text="Nombre: ")
+etiNombre.pack(side=tkinter.TOP)
+inNombre = tkinter.Entry(ventana)
+inNombre.pack(side=tkinter.TOP)
+
+#etiqueta y barra precio
+etiPrecio = tkinter.Label(ventana, text="Precio: ")
+etiPrecio.pack()
+inPrecio = tkinter.Entry(ventana)
+inPrecio.pack()
+
+#Tabla
+tabla = ttk.Treeview(height=10, columns=4)
+tabla.heading("#0", text="Producto")
+tabla.heading("#1", text="Precio")
+tabla.pack()
+
+#Botones
+
+botonGuardar = tkinter.Button(ventana, text="Guardar", width=500, height=2)
+botonEditar = tkinter.Button(ventana, text="Editar", width=500, height=2)
+botonBorrar = tkinter.Button(ventana, text="Borrar", width=500, height=2)
+botonBorrar.pack(side=tkinter.BOTTOM)
+botonEditar.pack(side=tkinter.BOTTOM)
+botonGuardar.pack(side=tkinter.BOTTOM)
+
+ventana.mainloop(
