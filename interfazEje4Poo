@@ -1,7 +1,6 @@
 import tkinter
 from tkinter import ttk
 
-
 class ventana:
     def __init__():
         ventana = tkinter.Tk()
@@ -42,6 +41,20 @@ class ventana:
 
         ventana.mainloop()
 
+class producto:
+
+    def __init__(self, nombre, precio):
+        self._nombre = nombre
+        self._precio = precio
+
+    def get_Nombre(self):
+        return self._nombre
+    def get_Precio(self):
+        return self._precio
+    def set_Nombre(self, n):
+        self._nombre = n
+    def set_Precio(self, p):
+        self._precio = p
 
 class controlador:
     def __init__():
