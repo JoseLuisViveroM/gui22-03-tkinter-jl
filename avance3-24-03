@@ -1,26 +1,7 @@
-import tkinter
-from tkinter import ttk
-
-class producto():
-    def _init_(self):
-        self._nombre = " "
-        self._precio = 0
-    def get_Nombre(self):
-        return self._nombre
-    def get_Precio(self):
-        return self._precio
-    def set_Nombre(self, n):
-        self._nombre = n
-    def set_Precio(self, p):
-        self._precio = p
-    def crear(self, nombre, precio):
-        self.nombre = nombre
-        self.precio = precio
-
 class ventana:
     def __init__(self):
 
-        
+
         ventana = tkinter.Tk()
         ventana.geometry("500x500")
         ventana.title("Mi primera Ventana")
