@@ -66,5 +66,6 @@ class controlador():
         v = ventana
         v.__init__(None)
 
+
 c = controlador
 c._init_()
